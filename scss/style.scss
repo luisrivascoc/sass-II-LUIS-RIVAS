@@ -1,0 +1,184 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    margin: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+h1{
+    font-size: 3.125em;
+}git 
+
+
+h3{
+    font-size: 2.5vh;
+}
+
+
+a{ 
+    text-decoration: none;
+    padding: 2vh;
+    color: black;
+}
+header{
+   height: 5em;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0;
+   
+    }
+nav{
+
+display: flex;
+}
+
+
+
+button{
+    font-size: 2.2vh;
+    padding: 2px;
+    border-bottom: 1px;
+    border-radius: 5px;
+    box-shadow:  0.125em 0.125em 0.625em ;
+    background-color: white;
+    
+}
+button:hover{
+    background-color: rgba(238, 192, 192, 0.753);
+}
+
+.logo img{
+    margin: 0%;
+}
+#hero{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+   
+    background-image:linear-gradient(0deg,
+    
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    
+    )
+,url(/elements/img/hero.jpg);
+background-repeat:repeat;
+background-size: cover;
+background-position: center center;
+
+
+}
+
+
+
+.conteiner{
+
+   display: flex;
+  text-align: center;
+  justify-content: center;
+   align-items: baseline;
+   height: 62.5em;
+
+
+   }
+   
+   .conteiner > div{
+
+text-align: center;
+ flex-wrap: wrap;
+
+
+
+   }
+ #conteiner__top{
+       width: auto;
+   padding: 8vh;
+    height: 15vh;
+    text-align: center;
+ 
+
+   }
+   .grid-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "redes logo-slogan MAPA";
+      text-align: center;
+  }
+  
+  .MAPA { grid-area: MAPA; 
+position: relative;
+justify-content: center;
+align-items: center;
+
+}
+  
+  .logo-slogan { grid-area: logo-slogan;
+position: relative;
+
+font-size: 1.8vh;
+display: flex;
+align-items: center;
+
+}
+  
+  .redes { grid-area: redes;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+  .grid-container img{
+     
+      display: inline-flex;
+      align-items: baseline;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 10vh;
+      
+  }
+ 
+  
+  .buscador{
+
+    display: flex;
+    height: 10vh;
+    justify-content:space-between;
+    align-items:center;
+    align-content: center;
+
+    
+
+}
+
+input {
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width: 720px) {
+    .conteiner {
+      display: flex;
+      text-align: center;
+      justify-content: flex-start;
+      align-items: center;
+      height: 168.5em;
+      flex-direction: column;
+      align-content: space-around;
+    }
+  }
